@@ -35,8 +35,14 @@ class Usuario extends CI_Controller {
 		}
 	}
 
-	public function home(){
-		$this->load-view('register');
+	public function register(){
+		$data['contenido'] = "user/register";
+		//$data['getPerfil'] = $this->Model_Usuario->getPerfil();
+		//$data['listUsers'] = $this->Model_Usuario->listUsers();
+		$this->load->view('header');
+		$this->load->view('template', $data);
+		$this->load->view('footer');
+	
 	}
 
 

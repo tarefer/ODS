@@ -4,4 +4,8 @@ background: #333;
 border-top: 2px solid #000;
 position: absolute;
 bottom: 0;
+color: white;
+text-align: center;
+padding: 30px;
+
 }

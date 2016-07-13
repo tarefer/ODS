@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('/css/custom.css') ;?>">
   <meta charset="UTF-8">
   <title>Donation | Website</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/custom.css')?>">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   
   <!-- jQuery library -->

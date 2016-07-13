@@ -1,4 +1,4 @@
  
  <footer id="foot">
-    FOOTER
+    Created by Fernando Montes <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
   </footer>

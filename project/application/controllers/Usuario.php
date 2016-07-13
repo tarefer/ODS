@@ -12,10 +12,12 @@ class Usuario extends CI_Controller {
 	*/
 	public function index()
 	{
-		$data['contenido'] = "usuario/index";
+		$data['contenido'] = "user/index";
 		//$data['getPerfil'] = $this->Model_Usuario->getPerfil();
 		//$data['listUsers'] = $this->Model_Usuario->listUsers();
+		$this->load->view('header');
 		$this->load->view('template', $data);
+		$this->load->view('footer');
 	}
 	/*
 	This function get the data from the form
@@ -31,6 +33,10 @@ class Usuario extends CI_Controller {
 			$this->Model_Usuario->insertUsers($txtId, $txtNames, $txtLastNames, $txtEmail, $txtPhoneNumer);
 			redirect ('');
 		}
+	}
+
+	public function home(){
+		$this->load-view('register');
 	}
 
 

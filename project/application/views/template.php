@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web App - CRUD</title>
+  <title>Donation | Website</title>
   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/custom.css')?>">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+  
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="<?php echo base_url('js/jquery.min.js') ?>"></script>
@@ -17,16 +18,12 @@
 
 </head>
 <body>
-  <header>
-    HEADER
-  </header>
+  
   <div class="container">
     <div class="col-md-5">
       <?php $this->load->view($contenido); ?>
     </div>
   </div>
-  <footer>
-    FOOTER
-  </footer>
+ 
 </body>
 </html>

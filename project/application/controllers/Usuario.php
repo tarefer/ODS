@@ -5,7 +5,7 @@ class Usuario extends CI_Controller {
 	
 	function __construct(){
 		parent::__construct();
-		//$this->load->model('Model_Usuario'); 
+		$this->load->model('Model_User'); 
 	}
 	/*
 	This function show us the view 'plantilla' and also get profiles from the model
@@ -13,8 +13,7 @@ class Usuario extends CI_Controller {
 	public function index()
 	{
 		$data['contenido'] = "user/index";
-		//$data['getPerfil'] = $this->Model_Usuario->getPerfil();
-		//$data['listUsers'] = $this->Model_Usuario->listUsers();
+		
 		$this->load->view('header');
 		$this->load->view('template', $data);
 		$this->load->view('footer');
@@ -25,20 +24,20 @@ class Usuario extends CI_Controller {
 	public function insert(){
 		$datos = $this->input->post();
 		if (isset($datos)) {
-			$txtId = $datos['txt-idProfile'];
-			$txtNames = $datos['txt-names'];
-			$txtLastNames = $datos['txt-lastNames'];
-			$txtEmail = $datos['txt-email'];
-			$txtPhoneNumer = $datos['txt-phoneNumber'];
-			$this->Model_Usuario->insertUsers($txtId, $txtNames, $txtLastNames, $txtEmail, $txtPhoneNumer);
+			$txtId = $datos[''];
+			$txtNames = $datos[''];
+			$txtLastNames = $datos[''];
+			$txtEmail = $datos[''];
+			$txtPhoneNumer = $datos[''];
+			$this->Model_User->insertUsers($txtId, $txtNames, $txtLastNames, $txtEmail, $txtPhoneNumer);
 			redirect ('');
 		}
 	}
 
 	public function register(){
 		$data['contenido'] = "user/register";
-		//$data['getPerfil'] = $this->Model_Usuario->getPerfil();
-		//$data['listUsers'] = $this->Model_Usuario->listUsers();
+		$data['getPerfil'] = $this->Model_User->getPerfil();
+		//$data['listUsers'] = $this->Model_User->listUsers();
 		$this->load->view('header');
 		$this->load->view('template', $data);
 		$this->load->view('footer');
